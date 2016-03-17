@@ -75,7 +75,7 @@
     "links": {
         "Datasheet": "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00116291.pdf",
         "Product Page": "http://www.st.com/web/en/catalog/sense_power/FM89/SC1718/PF260067",
-        "Wiki Page": "https://atmosphere.anaren.com/wiki/HTS221HTR_Driver"
+        "Wiki Page": "https://atmosphere.anaren.com/wiki/HTS221_Driver"
     },
     "manufacturer": "STMicroelectronics",
     "name": "hts221",

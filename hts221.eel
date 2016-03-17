@@ -1,6 +1,8 @@
 {
     "author": "STMicroelectronics, Anaren Inc.",
     "categories": [
+        "New",
+        "Humidity",
         "Temperature",
         "Sensor"
     ],

@@ -46,7 +46,7 @@
 		}
 	},
 	
-	"categories":["Temperature", "Sensor"],
+	"categories":["New", "Humidity", "Temperature", "Sensor"],
 	
 	"links":{
 		"Product Page":"http://www.st.com/web/en/catalog/sense_power/FM89/SC1718/PF260067",

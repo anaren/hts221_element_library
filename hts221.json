@@ -1,0 +1,71 @@
+{
+	"type": "Embedded Library",
+	"label": "HTS221 Driver",
+	"language": {
+		"en": {
+			"label": "HTS221 Driver"
+		}
+	},
+	"name": "hts221",
+	"author": "STMicroelectronics, Anaren Inc.",
+	"manufacturer":"STMicroelectronics",
+	"description":"The HTS221 is an ultra compact sensor for relative humidity and temperature. It includes a sensing element and a mixed signal ASIC to provide the measurement information through digital serial interfaces.",
+	"signature": "",
+	"version": "1.0.0",
+	
+	"code": {
+		"global" : "",
+		"setup" : "" 
+	},
+	
+	"elements": {
+		"temperature": {
+			"label": "Temperature",
+			"language": {
+				"en": {
+					"label": "Temperature"
+				}
+			},
+			"returnType":"float",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		},
+		
+		"humidity": {
+			"label": "Humidity",
+			"language": {
+				"en": {
+					"label": "Humidity"
+				}
+			},
+			"returnType":"float",
+			"inputType":"void",
+			"icon": null,
+			"code": ""
+		}
+	},
+	
+	"categories":["Temperature", "Sensor"],
+	
+	"links":{
+		"Product Page":"http://www.st.com/web/en/catalog/sense_power/FM89/SC1718/PF260067",
+		"Datasheet":"http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00116291.pdf",
+		"Wiki Page":"https://atmosphere.anaren.com/wiki/HTS221HTR_Driver"
+	},
+	
+	"config":{
+		"file":"hts221_config.h",
+		
+		"values":{
+			"i2c_address":{
+				"name":"I2C Address (7 bit)",
+				"input":"Combo",
+				"prefix":"#define AIR_HTS221_I2C_ADDRESS ",
+				"options": ["0xbe", "0xbd"],
+				"value":"0xbe",
+				"regex":"^[a-zA-Z0-9_.]*$"
+			}
+		}
+	}
+}

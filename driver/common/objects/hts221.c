@@ -310,7 +310,7 @@ HTS221_Error_et HTS221_Get_Humidity(uint16_t* value)
 	int16_t H0_T0_out, H1_T0_out, H_T_out;
 	int16_t H0_rh, H1_rh;
 	uint8_t buffer[2];
-	uint32_t tmp;
+	int32_t tmp;
 
 	if(HTS221_ReadReg(HTS221_H0_RH_X2, 2, buffer))
 		return HTS221_ERROR;
@@ -368,7 +368,7 @@ HTS221_Error_et HTS221_Get_Temperature(int16_t *value)
 	int16_t T0_out, T1_out, T_out, T0_degC_x8_u16, T1_degC_x8_u16;
 	int16_t T0_degC, T1_degC;
 	uint8_t buffer[4], tmp;
-	uint32_t tmp32;
+	int32_t tmp32;
 
 	if(HTS221_ReadReg(HTS221_T0_DEGC_X8, 2, buffer))
 		return HTS221_ERROR;

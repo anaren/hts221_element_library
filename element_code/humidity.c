@@ -1,4 +1,4 @@
-	int16_t htsHumid;
+	uint16_t htsHumid;
 
 	/**
 	Read the relative humidity.  When set to Continuous Conversion mode, the

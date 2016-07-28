@@ -976,24 +976,16 @@ HTS221_Error_et HTS221_WriteReg(uint8_t RegAddr, uint16_t NumByteToWrite, uint8_
 * @retval Error code [HTS221_OK, HTS221_ERROR].
 */
 HTS221_Error_et HTS221_ReadReg(uint8_t RegAddr, uint16_t NumByteToRead, uint8_t* Data) {
-
-
 	uint8_t writeBytes[1];
 	uint8_t counter;
 	
 	for(counter = 0; counter < NumByteToRead; counter++) { //Loop through for each byte
-
 		writeBytes[0] = RegAddr+counter;
-		AIR_I2C_Write(HTS221_I2C_ADDRESS>>1,writeBytes,1);
-		AIR_I2C_Read(HTS221_I2C_ADDRESS>>1,Data+(counter*sizeof(uint8_t)),1);
-
+		AIR_I2C_ComboRead(HTS221_I2C_ADDRESS>>1, writeBytes, 1, Data+(counter*sizeof(uint8_t)), 1);
 	}
 
 	return HTS221_OK;
 }
-
-
-
 
 /**
 * @}

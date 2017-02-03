@@ -1,4 +1,4 @@
-	uint16_t htsTemp;
+	int16_t htsTemp;
 
 	/**
 	Read the temperature.  When set to Continuous Conversion mode, the

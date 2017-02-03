@@ -7,9 +7,9 @@
         "Sensor"
     ],
     "code": {
-        "connected": " \r\n",
+        "connected": " \n",
         "global": "",
-        "interval": " \r\n",
+        "interval": " \n",
         "setup": "\t//HTS221 Init structure definition\n\tHTS221_Init_st hts221Init;\n\t//Init HTS221 \n\tHTS221_Setup(&hts221Init);"
     },
     "config": {
